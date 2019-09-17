@@ -47,5 +47,14 @@ namespace VectorMath
             this.Y = y;
             this.Z = z;
         }
+        /// <summary>
+        /// Computers the dot product of this vector and another vector
+        /// </summary>
+        /// <param name="other">The other vector</param>
+        /// <returns>The Dot product is a double precision float</returns>
+        public double DotProduct(Vector3 other)
+        {
+            return this.X * other.X + this.Y * other.Y * this.Z * other.Z;
+        }
     }
 }
